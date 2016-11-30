@@ -7,19 +7,24 @@ mat
 
 #include <iostream>
 
+int void help(){
+	int a=0 ;
+	cout<< «what effect do you want to apply to the image \n»<<
+		<< « 1- Crop and resize \n» <<	
+		<< « 2- Image filter \n» <<	
+		<< « 3- Laplacian - edge detection \n» <<	
+		<< « 4- Todo \n» <<endl ;
+	cin>>a ;
+	
+	return a;
+}
 
 int main () 
 {
 	using namespacestd ;
-	int a=0 ;
-
-	cout<< «what effect do you want to apply to the image \n»<<
-		<< « 1- crop and resize \n» <<	
-		<< « 2- crop and resize \n» <<	
-		<< « 3- crop and resize \n» <<	
-		<< « 4- crop and resize \n» <<endl ;
-	cin>>a ;
 	
+	
+	help();
 
 	switch (a)
 	 {
@@ -155,6 +160,11 @@ int main ()
   		
  	 	break;
 
-		default:	//Code to execute if <variable> does not equal the value 							//following any of the cases
-	  	break;
+		default:	//Code to execute if <variable> does not equal the value
+				//following any of the cases
+			cout<< «This option is not available \n»<<endl;
+			help();
+			
+		case ('q' || 'Q' || 27):
+		break;
 }
