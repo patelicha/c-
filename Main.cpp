@@ -13,11 +13,11 @@ int main ()
 	using namespacestd ;
 	int a=0 ;
 
-	cout<< «what effect do you want to apply to the image \n»<<
-		<< « 1- crop and resize \n» <<	
-		<< « 2- crop and resize \n» <<	
-		<< « 3- crop and resize \n» <<	
-		<< « 4- crop and resize \n» <<endl ;
+	cout<< "what effect do you want to apply to the image \n"<<
+		<< " 1- crop and resize \n" <<	
+		<< " 2- crop and resize \n" <<	
+		<< " 3- crop and resize \n" <<	
+		<< " 4- crop and resize \n" <<endl ;
 	cin>>a ;
 	
 
@@ -30,17 +30,17 @@ int main ()
 				
 				int width , height ;
 				
-				cout<< «Enter the number of columns and rows » <<endl ;
+				cout<< " Enter the number of columns and rows " <<endl ;
 				cin>>width>>height ;
 				
 				Size patchSize (width , height);
 				
-				cout<< «Enter the number of columns and rows » <<endl ; 
+				cout<< " Enter the number of columns and rows " <<endl ; 
 				cin>>width>>height ;
 				
 				Size dsize (width , height);
 				
-				cout<< «Enter the number of columns and rows » <<endl ;
+				cout<< " Enter the number of columns and rows " <<endl ;
 				cin>>width>>height ;
 				
 				Size ksize (width , height);
@@ -76,7 +76,7 @@ int main ()
 				double maxValue , c  ;
 				int adaptiveMethod , thresholdType , blockSize ;
 				
-				cout<< « » <<endl ;   //enter the parameteres of the editing
+				cout<<" " <<endl ;   //enter the parameteres of the editing
  				cin>>maxValue>>adaptiveMethod ; //input them
 				cin>>thresholdType>>blockSize>>c ;    //input them
 
