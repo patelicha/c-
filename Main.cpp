@@ -3,21 +3,24 @@ blur
 resize
 findContours
 mat
+namedWindow
+imshow
 
 
 #include <iostream>
 
-int void help(){
-	int a=0 ;
-	cout<< «what effect do you want to apply to the image \n»<<
-		<< « 1- Crop and resize \n» <<	
-		<< « 2- Image filter \n» <<	
-		<< « 3- Laplacian - edge detection \n» <<	
-		<< « 4- Todo \n» <<endl ;
-	cin>>a ;
+int void help()
+	{
+		int a=0 ;
+		cout<< «what effect do you want to apply to the image \n»<<
+		    << « 1- Crop and resize \n» <<	
+		    << « 2- Image filter \n» <<	
+		    << « 3- Laplacian - edge detection \n» <<	
+		    << « 4- Todo \n» <<endl ;
+		cin>>a ;
 	
-	return a;
-}
+		return a;
+	}
 
 int main () 
 {
